@@ -4,10 +4,10 @@ Python must be installed on your local machine
 
 || Download the zip file
 || For windows:
-   Run from cmd or powershell
+   Run from cmd or powershell:
    pip install sympy
    
-   For Ubuntu/Mac
+   For Ubuntu/Mac:
    sudo pip3 install sympy
 || Then run the index.py file extracted from the zip
    For windows:
