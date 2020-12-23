@@ -1,10 +1,17 @@
 import math
 from sympy import *
 x,y,z = symbols('x y z')
-iterable_list = [1,3,5,7,8,4,6,7,-99]
+iterable_list = []
 main_list = []
 filtered_list = []
 init_printing()
+print('Type the number then press enter || Type q then enter,after you finish entering the values ')
+while True:
+    val = input('Enter the value(Integer): ')
+    if val == 'q':
+        break
+    iterable_list.append(int(val))
+
 def get_new_list(arr):
     new_list = []
     for num in range(0,len(arr)-1):
@@ -59,4 +66,12 @@ def getFinalExpr():
     return expr
         
 last = factor(getFinalExpr())
+print('🎃 The expression is:\n')
+print('This is the factorized form: ')
 pprint(last,use_unicode=True)
+print('\n')
+print('This is the expanded form: ')
+expanded = expand(last)
+pprint(expanded,use_unicode=True)
+print('\n')
+print(' ⚡⚡ Now verify it 🕶️')
