@@ -5,7 +5,7 @@ Python must be installed on your local machine
 || Download the zip file
 || For windows:
    Run from cmd or powershell:
-   ##pip install sympy
+   pip install sympy
    
    For Ubuntu/Mac:
    sudo pip3 install sympy
